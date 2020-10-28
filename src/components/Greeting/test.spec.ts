@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import Greeting from "@/components/Greeting.vue";
+import Greeting from "@/components/Greeting/index.vue";
 
 describe("Greeting.vue", () => {
   it("renders a greeting", () => {
