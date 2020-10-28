@@ -13,7 +13,7 @@ describe("HelloWorld.vue", () => {
     expect(shallowWrapper.html()).toMatch(mountWrapper.html());
   });
 
-  it("shallowMount and mount do not display the same within a Parent component", () => {
+  it("shallowMount and mount do not display the same with the Parent component", () => {
     const shallowWrapper = shallowMount(Parent);
     const mountWrapper = mount(Parent);
 
