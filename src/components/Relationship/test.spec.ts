@@ -7,8 +7,8 @@ describe("HelloWorld.vue", () => {
     const shallowWrapper = shallowMount(Child);
     const mountWrapper = mount(Child);
 
-    console.log("Shallow mounting Child component:", shallowWrapper.html());
-    console.log("Normal mounting Child component:", mountWrapper.html());
+    // console.log("Shallow mounting Child component:", shallowWrapper.html());
+    // console.log("Normal mounting Child component:", mountWrapper.html());
 
     expect(shallowWrapper.html()).toMatch(mountWrapper.html());
   });
@@ -17,8 +17,8 @@ describe("HelloWorld.vue", () => {
     const shallowWrapper = shallowMount(Parent);
     const mountWrapper = mount(Parent);
 
-    console.log("Shallow mounting Parent component:", shallowWrapper.html());
-    console.log("Normal mounting Child component:", mountWrapper.html());
+    // console.log("Shallow mounting Parent component:", shallowWrapper.html());
+    // console.log("Normal mounting Child component:", mountWrapper.html());
 
     expect(shallowWrapper.html()).not.toMatch(mountWrapper.html());
   });
